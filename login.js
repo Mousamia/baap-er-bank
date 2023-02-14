@@ -16,9 +16,9 @@ const btnSubmit = document.getElementById('btn-id').addEventListener('click', fu
     // step-4: verifying user
 
     if(email === "sontan@baper.com" && password === "secret"){
-        console.log("valid user")
+        window.location.href = 'bank-info.html';
     }
 
     else 
-        console.log("invalid user");
+        alert('Please Enter Valid user ar noy thota phatabo')
 })
