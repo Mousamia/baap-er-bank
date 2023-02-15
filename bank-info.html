@@ -17,36 +17,42 @@
 
     <main>
         <div class="grid grid-cols-3 gap-4 mt-24 mx-auto w-9/12 font-bold  text-slate-700">
-            <div class="w-10/12 bg-yellow-300 p-10 rounded-lg font">
-                <h4>Withdraw</h4>
-                <h2>$000</h2>
-            </div>
+           
             <div class="w-10/12 bg-orange-300 p-10 rounded-lg">
                 <h4>Deposit</h4>
-                <h2>$00</h2>
+                <h2>$ <span id="deposit-total">00</span></h2>
             </div>
+
+            <div class="w-10/12 bg-yellow-300 p-10 rounded-lg font">
+                <h4>Withdraw</h4>
+                <h2 id="withdraw-total">$000</h2>
+            </div>
+
             <div class="w-10/12 bg-lime-300 p-10 rounded-lg">
                 <h4>Balance</h4>
-                <h2>$00</h2>
+                <h2>$<span id="balance-total">00</span> </h2>
             </div>
         </div>
 
         <div class="grid grid-cols-2 gap-8 mt-24 mx-auto w-9/12 font-semibold text-xl text-slate-700">
             <div class="p-8 bg-indigo-400 rounded">
                 <h3 class="text-2xl">Please Enter Amount</h3>
-                <input type="text" name="" id="input-field1" class="my-2 w-9/12" placeholder="$Enter Amount">
+                <input type="text" name="" id="deposit-field" class="my-2 w-9/12" placeholder="$Enter Amount">
                 <button id="btn-deposit" class="block bg-lime-300 p-3 my-2 rounded-lg hover:bg-sky-700">
                     Deposit
                 </button>
             </div>
             <div class="p-8 bg-orange-400 rounded">
                 <h3 class="text-2xl">Please Withdraw</h3>
-                <input type="text" name="" id="input-field2" class="my-2 w-9/12" placeholder="$Enter Amount">
+                <input type="text" name="" id="withdraw-field" class="my-2 w-9/12" placeholder="$Enter Amount">
                 <button id="btn-withdraw" class="block bg-lime-300 p-3 my-2 rounded-lg hover:bg-sky-700">
                     Withdraw
                 </button>
             </div>
         </div>
     </main>
+
+    <script src="deposit.js">
+    </script>
 </body>
 </html>
